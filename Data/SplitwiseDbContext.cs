@@ -1,9 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Splitwise.Entities;
 
 namespace Splitwise.Data
 {
-    public class SplitwiseDbContext : DbContext
+    public class SplitwiseDbContext : IdentityDbContext<ApplicationUser>
     {
         public SplitwiseDbContext(DbContextOptions options) : base(options) { }
     
@@ -13,8 +15,20 @@ namespace Splitwise.Data
         public DbSet<GroupDetail> GroupDetail { get; set; }
         public DbSet<Users> Users { get; set; }
 
+        public DbSet<ApplicationUser> ApplicationUsers { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<IdentityUserLogin<string>>(entity =>
+            {
+                entity.HasKey(e => new
+                {
+                    e.LoginProvider,
+                    e.ProviderKey
+                });
+            });
             //modelBuilder.Entity<Group>()
             //    .HasMany(g => g.Users)
             //    .UsingEntity(j => j.ToTable("GroupUser"));
@@ -27,6 +41,8 @@ namespace Splitwise.Data
             modelBuilder.Entity<ExpenseDetail>()
                 .Property(b => b.Amount)
                 .HasColumnType("decimal(18,2)");
+
+            // Other configurations...
         }
         //protected override void OnModelCreating(ModelBuilder modelBuilder)
         //{
@@ -50,6 +66,7 @@ namespace Splitwise.Data
         //        .OnDelete(DeleteBehavior.Restrict);
 
         //}
+
 
     }
 }

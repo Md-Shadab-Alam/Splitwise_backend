@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Splitwise.Data;
 
@@ -11,9 +12,11 @@ using Splitwise.Data;
 namespace Splitwise.Migrations
 {
     [DbContext(typeof(SplitwiseDbContext))]
-    partial class SplitwiseDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240626143245_add_auth")]
+    partial class add_auth
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
