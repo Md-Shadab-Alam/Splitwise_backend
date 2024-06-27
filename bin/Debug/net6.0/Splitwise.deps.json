@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "Splitwise/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.31",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.31",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.18",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.18",
@@ -56,6 +57,17 @@
           "lib/net6.0/Humanizer.dll": {
             "assemblyVersion": "2.14.0.0",
             "fileVersion": "2.14.1.48190"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.JwtBearer/6.0.31": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.35.0"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
+            "assemblyVersion": "6.0.31.0",
+            "fileVersion": "6.0.3124.26908"
           }
         }
       },
@@ -785,6 +797,13 @@
       "sha512": "sha512-lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authentication.JwtBearer/6.0.31": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+cNlwMJtNjVa5h7O+mAPJfOvcBZ7HYeLCqoGckR4uOG8bVhx0rryBbMFune0VDMNErRZAbHDnw/+J/vAbkyHBQ==",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/6.0.31",
+      "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.6.0.31.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/6.0.31": {
       "type": "package",

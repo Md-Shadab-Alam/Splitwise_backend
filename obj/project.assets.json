@@ -59,6 +59,25 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Authentication.JwtBearer/6.0.31": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.35.0"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/6.0.31": {
         "type": "package",
         "compile": {
@@ -1316,6 +1335,21 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.JwtBearer/6.0.31": {
+      "sha512": "+cNlwMJtNjVa5h7O+mAPJfOvcBZ7HYeLCqoGckR4uOG8bVhx0rryBbMFune0VDMNErRZAbHDnw/+J/vAbkyHBQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/6.0.31",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll",
+        "lib/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
+        "microsoft.aspnetcore.authentication.jwtbearer.6.0.31.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Cryptography.Internal/6.0.31": {
@@ -3567,6 +3601,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.31",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.31",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.18",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.18",
@@ -3618,6 +3653,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "target": "Package",
+            "version": "[6.0.31, )"
+          },
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",
             "version": "[6.0.31, )"
