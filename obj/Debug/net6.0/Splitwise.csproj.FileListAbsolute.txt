@@ -92,3 +92,9 @@ C:\Users\2152480\OneDrive - Cognizant\Desktop\Practice Project\Splitwise\Splitwi
 C:\Users\2152480\OneDrive - Cognizant\Desktop\Practice Project\Splitwise\Splitwise\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\2152480\OneDrive - Cognizant\Desktop\Practice Project\Splitwise\Splitwise\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\2152480\OneDrive - Cognizant\Desktop\Practice Project\Splitwise\Splitwise\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\2152480\OneDrive - Cognizant\Desktop\Practice Project\Splitwise\Splitwise\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\2152480\OneDrive - Cognizant\Desktop\Practice Project\Splitwise\Splitwise\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\2152480\OneDrive - Cognizant\Desktop\Practice Project\Splitwise\Splitwise\bin\Debug\net6.0\Okta.AspNet.Abstractions.dll
+C:\Users\2152480\OneDrive - Cognizant\Desktop\Practice Project\Splitwise\Splitwise\bin\Debug\net6.0\Okta.AspNetCore.dll
+C:\Users\2152480\OneDrive - Cognizant\Desktop\Practice Project\Splitwise\Splitwise\bin\Debug\net6.0\RabbitMQ.Client.dll
+C:\Users\2152480\OneDrive - Cognizant\Desktop\Practice Project\Splitwise\Splitwise\bin\Debug\net6.0\System.Threading.Channels.dll

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Splitwise.Data;
@@ -23,17 +24,23 @@ namespace Splitwise.Controllers
         }
 
 
+       // [Authorize]
         [HttpGet("Balance")]
         public async Task<IActionResult> GetBalances()
         {           
             return Ok(await _balanceService.GetBalances());
         }
 
+
+      //  [Authorize]
         [HttpGet("UserID")]
         public async Task<IActionResult> GetBalanceByUser(int userId)
         {
             return Ok( await _balanceService.GetBalanceByUser(userId));
         }
+
+
+     //   [Authorize]
         [HttpGet("tran")]
         public async Task<IActionResult> OptimizeTransactions(int groupId)
         {
